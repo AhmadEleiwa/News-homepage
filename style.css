@@ -51,6 +51,17 @@ header .title h1 {
 img {
     width: 100%;
 }
+.menu-icon{
+    width: 3em;
+    display: none;
+    height: fit-content;
+}
+.img-desktop{
+    display: block;
+}
+.img-mobile{
+    display: none;
+}
 
 .content {
     width: 80%;
@@ -211,4 +222,78 @@ img {
 .content .sub-news .news-list .news-item img{
     width: 8em;
     height: fit-content;
+}
+
+
+
+/* media */
+
+@media screen and (max-width:675px) {
+    header nav{
+        display: none;
+    }
+    header .title{
+        font-size: 0.6em;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .img-desktop{
+        display: none;
+    }
+    .img-mobile{
+        display: block;
+    }
+    .content{
+        width: 90%;
+    }
+    .content .main-view{
+        flex-direction: column  ;
+    }
+    .content .main-view .main-news{
+        width: 100%;
+        margin-bottom: 4em
+    }
+    .content .main-view .main-news .main-news-body{
+        width: 100%;
+        flex-direction: column;
+   
+    }
+    .content .main-view .main-news .main-news-body .main-news-title{
+        width: 100%;
+    }
+    .content .main-view .main-news .main-news-body .main-news-title{
+        width: 100%;
+        font-size: .67em;
+    }
+    .content .main-view .main-news .main-news-body .main-news-content {
+        width: 100%;
+    }
+    .content .main-view .main-news .main-news-body .main-news-content p{
+        width: 100%;
+    }
+    .content .main-view .main-news .main-news-body .main-news-content a{
+        width: 50%;
+        font-size: 0.8em;
+    }
+    .content .main-view aside{
+        width: 100%;
+        
+    }
+    .content .main-view aside  {
+        font-size: 0.8em;
+    }
+
+
+    .content .sub-news .news-list{
+        flex-direction: column;
+    }
+
+    .content .sub-news .news-list .news-item {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+    .content .sub-news .news-list .news-item > *{
+        font-size: 0.7em;
+    }
 }
